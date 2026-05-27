@@ -1,15 +1,29 @@
-import React from 'react';
-import './globals.css';
-import Navbar from '../../components/navbar'; // Correct alias and capitalization
+import React from "react";
 
 export default function Home() {
-
   return (
     <>
-      <Navbar />
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <h1 className="text-4xl font-bold">Fullstack Developer</h1>
-        
+      <main
+        className="flex flex-col items-center text-center justify-start p-24"
+        style={{ backgroundColor: "#F5F0EB" }}
+      >
+        <h1 className="text-4xl font-sans max-w-xl">
+          {"Hi, I'm Alexis — a fullstack developer based in Stockholm. I build backends that work and frontends that (mostly) don't break. Currently looking for my next opportunity."
+            .split(" ")
+            .map((word, i) => (
+              <span key={i} className="hover:font-bold cursor-default">
+                {" "}
+                {word}
+              </span>
+            ))}
+        </h1>{" "}
+        <div className="mt-16">
+        <a href="mailto:alexissalazar9@gmail.com?subject=What a nice website!">
+          <button className="bg-[#C7AC90] hover:bg-[#A88C6D] text-white font-bold py-2 px-4 rounded">
+            Contact Me
+          </button>
+        </a>
+        </div>
       </main>
     </>
   );
