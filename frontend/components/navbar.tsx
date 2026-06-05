@@ -3,7 +3,7 @@ export const Navbar = () => {
     <nav className="p-4 shadow-md" style={{ backgroundColor: "#F5F0EB" }}>
       <div className="flex items-center justify-between px-188 font-sans">
         <div className="relative group">
-          Credentials
+          <a href="/credentials" className="text-lg hover:text-[#C7AC90]">Credentials</a>
           <div className="absolute hidden group-hover:block bg-white shadow-md p-2 mt-0 min-w-max">
             <a href="/credentials/resume" className="block py-1 text-sm hover:text-[#C7AC90]">Resume</a>
             <a href="/credentials/about" className="block py-1 text-sm hover:text-[#C7AC90]">About</a>
